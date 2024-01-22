@@ -902,7 +902,7 @@ p.url-pagamento {
 
 @media screen and (min-width: 500px) {
   body {
-    background-image: url(/img/bg-desctop-novo.png);
+    background-image: url(/img/bg-desktop-novo.png);
     background-size: cover;
     background-position: top;
   }
