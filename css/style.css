@@ -52,7 +52,7 @@ header {
   align-items: center;
   margin: auto;
   padding: 0 15px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .container-img {
@@ -279,7 +279,9 @@ header {
 .hr-login,
 .hr-prejogo,
 .hr-deposito,
-.hr-afiliado, .hr-aviso-bottom-afiliado {
+.hr-afiliado,
+.hr-aviso-bottom-afiliado,
+.hr-saque {
   background-color: #fff;
   height: 2px;
   width: 160px;
@@ -380,14 +382,17 @@ header {
 
 .hr-cadastro,
 .hr-deposito,
-.hr-afiliado, .hr-aviso-bottom-afiliado {
+.hr-afiliado,
+.hr-aviso-bottom-afiliado,
+.hr-saque {
   width: 90%;
 }
 
 .inputs-cadastro,
 .input-deposito,
 .container-pix,
-.container-content-afiliado {
+.container-content-afiliado,
+.container-input-conta {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -398,7 +403,9 @@ header {
 .senha-repetsenha,
 .name-cpf-deposito,
 .value-deposito,
-.content-pix-left {
+.content-pix-left,
+.container-saque,
+.input-conta {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -406,7 +413,8 @@ header {
 }
 
 .senha-repetsenha,
-.value-deposito {
+.value-deposito,
+.container-saque {
   gap: 5px;
   margin-top: 10px;
 }
@@ -430,7 +438,9 @@ header {
 .repet-senha,
 .input-name,
 .input-cpf,
-.input-value-deposito {
+.input-value-deposito,
+.input-value-saque,
+.input-info-conta {
   display: flex;
   flex-direction: column;
 }
@@ -454,7 +464,8 @@ header {
 
 .inputs-cadastro input,
 .input-deposito input,
-.container-pix input {
+.container-pix input,
+.container-input-conta input {
   height: 25px;
   padding: 0 10px;
   font-size: 12px;
@@ -598,7 +609,8 @@ input:focus::placeholder {
   box-shadow: 0 0 12px -4px #fff;
 }
 
-.btn-deposito-via-pix {
+.btn-deposito-via-pix,
+.btn-saque {
   width: 100%;
   height: 30px;
   margin: 15px 0;
@@ -607,7 +619,8 @@ input:focus::placeholder {
   font-size: 20px;
 }
 
-.btn-deposito-via-pix:hover {
+.btn-deposito-via-pix:hover,
+.btn-saque:hover {
   background-color: #26c211;
   color: #fff;
   scale: 1.05;
@@ -652,7 +665,8 @@ input:focus::placeholder {
   text-shadow: 0 0 10px;
 }
 
-.name-cpf-deposito label {
+.name-cpf-deposito label,
+.input-conta label {
   margin-top: 10px;
   letter-spacing: 0.5px;
 }
@@ -876,7 +890,7 @@ p.url-pagamento {
 }
 
 .btn-sacar:hover {
-  background-color: #EF3CB5;
+  background-color: #ef3cb5;
   color: #fff;
   scale: 1.05;
   box-shadow: 0 0 12px -4px #fff;
@@ -894,7 +908,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td{
+th,
+td {
   font-size: 8px;
   border: 1px solid #000000;
   padding: 10px;
@@ -906,7 +921,7 @@ th, td{
   align-items: center;
 }
 
-.content-afiliado-right table{
+.content-afiliado-right table {
   display: none;
 }
 
@@ -915,7 +930,7 @@ th, td{
   margin-top: 5px;
 }
 .aviso-bottom-afiliado {
-  margin-top: 5px ;
+  margin-top: 5px;
 }
 
 .aviso-bottom-afiliado p {
@@ -930,10 +945,31 @@ th, td{
   margin-top: 0px;
 }
 
+/* PÁGINA DE SAQUE */
 
+.btn-saque {
+  /* width: 100%; */
+  height: 50px;
+  border-radius: 25px;
+  font-size: 30px;
+}
+
+.hr-saque {
+  width: 250px;
+}
+
+.p2-pg-saque {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+/* PÁGINA DE CONTA */
+
+.container-input-conta {
+  margin-bottom: 45px;
+}
 
 /* RESPONSIVIDADE */
-
 
 @media screen and (max-width: 250px) {
   .btn-jogar,
@@ -950,8 +986,7 @@ th, td{
 }
 
 @media screen and (min-width: 500px) {
-
-    body {
+  body {
     /* background-image: url(/img/bgdesktopnovo.png); */
     background-image: url(https://raw.githubusercontent.com/wandersonrodriguespro/mega-piano/main/img/bgdesktopnovo.png);
     background-size: cover;
@@ -982,7 +1017,8 @@ th, td{
     font-size: 30px;
   }
   .hr-login,
-  .hr-prejogo, .hr-aviso-bottom-afiliado {
+  .hr-prejogo,
+  .hr-aviso-bottom-afiliado {
     height: 2px;
     width: 260px;
   }
@@ -1012,7 +1048,9 @@ th, td{
   .senha-repetsenha,
   .name-cpf-deposito,
   .value-deposito,
-  .content-pix-right {
+  .content-pix-right,
+  .container-saque,
+  .input-conta {
     width: 40%;
     padding: 10px;
   }
@@ -1055,7 +1093,8 @@ th, td{
   }
 
   .senha label,
-  .input-value-deposito label {
+  .input-value-deposito label,
+  .input-value-saque label {
     margin-top: 4px;
     margin-bottom: 4px;
   }
@@ -1097,7 +1136,9 @@ th, td{
     font-size: 14px;
   }
 
-  .name-cpf-deposito {
+  .name-cpf-deposito,
+  .input-conta,
+  .input-info-conta {
     gap: 5px;
   }
 
@@ -1105,13 +1146,15 @@ th, td{
     gap: 20px;
   }
 
-  .name-cpf-deposito label {
+  .name-cpf-deposito label,
+  .input-conta label {
     font-size: 25px;
     margin-top: 4px;
     margin-bottom: 4px;
   }
 
-  .input-value-deposito label {
+  .input-value-deposito label,
+  .input-value-saque label {
     font-size: 25px;
   }
 
@@ -1219,7 +1262,7 @@ th, td{
     z-index: 1;
   }
 
-  .content-afiliado-right table{
+  .content-afiliado-right table {
     display: block;
   }
 
@@ -1227,7 +1270,6 @@ th, td{
     width: 25%;
     margin-top: -50px;
   }
- 
 
   .p-bonus-afiliado {
     font-size: 17px;
@@ -1236,7 +1278,7 @@ th, td{
   .content-afiliado-center {
     width: 40%;
   }
-  
+
   .btn-sacar {
     font-size: 30px;
     margin: 40px auto;
@@ -1251,7 +1293,7 @@ th, td{
   }
 
   .aviso-bottom-afiliado {
-    margin-top: 20px ;
+    margin-top: 20px;
   }
 
   .aviso-bottom-afiliado p {
@@ -1275,53 +1317,63 @@ th, td{
     margin-top: 5px;
   }
   .aviso-bottom-afiliado {
-    margin-top: 10px ;
+    margin-top: 10px;
   }
 
   .content-afiliado {
     margin-top: -70px;
   }
 
+  /* RESPONSIVIDADE PAGINA DE SAQUE */
+
+  .saldo-disponivel-saque,
+  .info-conta {
+    font-size: 20px;
+  }
+  .p2-pg-saque {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 10px;
+  }
 }
 
-
 @media screen and (max-width: 980px) {
-
-
-  .content-afiliado-right table{
+  .content-afiliado-right table {
     display: none;
   }
 
   .table-container {
     overflow-x: auto;
   }
-  
+
   table {
     border-collapse: collapse;
   }
-  
-  th, td{
+
+  th,
+  td {
     font-size: 8px;
     border: 1px solid #000000;
     padding: 10px;
   }
-  
-  .content-afiliado-right table{
+
+  .content-afiliado-right table {
     display: none;
   }
-  
+
   .aviso-right-afiliado {
     font-size: 9px;
     margin-top: 5px;
   }
   .aviso-bottom-afiliado {
-    margin-top: 5px ;
+    margin-top: 5px;
   }
-  
+
   .aviso-bottom-afiliado p {
     font-size: 8.5px;
   }
-  
+
   .hr-aviso-bottom-afiliado {
     margin: 4px auto;
   }
@@ -1335,7 +1387,7 @@ th, td{
     max-width: 90%;
     font-size: 11px;
     text-align: center;
-  
+
     background-color: #000;
     padding: 5px;
   }
@@ -1356,16 +1408,14 @@ th, td{
   }
   .content-afiliado-center {
     width: 100%;
-}
-.content-afiliado-right {
-  width: 100%;
-  font-size: 10px;
-}
+  }
+  .content-afiliado-right {
+    width: 100%;
+    font-size: 10px;
+  }
 
-.btn-sacar {
-  font-size: 20px;
-  margin: 10px auto;
+  .btn-sacar {
+    font-size: 20px;
+    margin: 10px auto;
+  }
 }
-}
-
-

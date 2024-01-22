@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Mega Piano - Saque</title>
+  </head>
+  <body>
+    <header>
+      <div class="btn-header">
+        <button class="btn-menu btn-menu-left" onclick="toggleMenuLeft(true)">
+          <img src="../img/mobile_menu.png" />
+        </button>
+        <div class="g-login">
+          <p>JÁ POSSUI CONTA:</p>
+          <a href="login.html"
+            ><button class="btn-header-login">CLIQUE AQUI</button></a
+          >
+        </div>
+      </div>
+
+      <nav id="nav-left">
+        <div class="menu-left" id="menu">
+          <div class="close" onclick="toggleMenuLeft(false)"><p>X</p></div>
+          <ul class="list-menu">
+            <li><a href="#">Depositar</a></li>
+            <li><a href="#">Sacar</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+            <li><a href="#">Afiliado</a></li>
+            <li><a href="#">Mega Piano</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Indique um amigo</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Conta</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-content">
+      <div class="container-main container-form-deposito">
+        <div class="container-img"><img src="../img/saque.png" /></div>
+
+        <div class="title">
+          <p>SAQUE!</p>
+          <div class="hr-saque"></div>
+        </div>
+        <p class="saldo-disponivel-saque">
+          SALDO DISPONÍVEL: R$ <span>200,00</span>
+        </p>
+        <p class="p2-pg-saque">
+          Antes de fazer um saque Pix, certifique-se de ter registrado seu CPF
+          como chave Pix no seu aplicativo bancário.
+        </p>
+
+        <div class="input-deposito">
+          <div class="name-cpf-deposito">
+            <div class="input-name">
+              <label for="name-deposito name-saque"
+                >Nome do Destinatário:</label
+              >
+              <input
+                type="text"
+                id="name-saque"
+                placeholder="Digite o nome do destinatrio"
+              />
+            </div>
+            <div class="input-cpf">
+              <label for="chave-pix">Chave PIX</label>
+              <input
+                type="text"
+                id="chave-pix"
+                placeholder="Digite a Chave PIX"
+              />
+            </div>
+          </div>
+
+          <div class="container-saque">
+            <div class="input-value-saque">
+              <label for="input-value-saque">Valor Para Depósito:</label>
+              <input
+                type="number"
+                id="input-value-saque"
+                placeholder="Valor minimo para saque é de R$200,00"
+              />
+            </div>
+
+            <button class="btn-saque">SACAR VIA PIX!</button>
+          </div>
+        </div>
+
+        <div class="concentimento">
+          <div class="checkbox idade-minima">
+            <input
+              type="checkbox"
+              name="termos-de-serviço"
+              id="termos-de-serviço"
+            />
+            <label for="termos-de-serviço"
+              >Ao solicitar saque você concorda com os termos de serviço e a
+              taxa de 10%
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/scripts.js"></script>
+</html>
