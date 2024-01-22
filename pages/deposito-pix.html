@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Mega Piano - Deposito</title>
+  </head>
+  <body>
+    <header>
+      <div class="btn-header">
+        <button class="btn-menu btn-menu-left" onclick="toggleMenuLeft(true)">
+          <img src="../img/mobile_menu.png" />
+        </button>
+        <div class="header-cont-right">
+          <p class="saldo">SALDO: R$<span>00,00</span></p>
+          <button class="user-logado" onclick="toggleMenuRight(true)">
+            <img src="../img/user.png" />
+          </button>
+        </div>
+      </div>
+
+      <nav id="nav-left">
+        <div class="menu-left" id="menu">
+          <div class="close" onclick="toggleMenuLeft(false)"><p>X</p></div>
+          <ul class="list-menu">
+            <li><a href="#">Depositar</a></li>
+            <li><a href="#">Sacar</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+            <li><a href="#">Afiliado</a></li>
+            <li><a href="#">Mega Piano</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Indique um amigo</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Conta</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-content">
+      <div class="container-main">
+        
+        <div class="container-img"><img src="../img/check.png" alt="" /></div>
+
+        <div class="container-pix">
+          <div class="content-pix-left">
+            <p>EFETUAR O PAGAMENTO DE R$<span>25,00</span> EM ATÉ 10:00</p>
+            <img class="qr-code" id="qr-code" src="../img/qr-code.png" />
+            <p class="url-pagamento">00020101021226790014br.gov.bcb.pix2557brcode.starkinfra.com/v2/df231eeb793c42eaa20e6a1cf81ddfaf5204000053039865802BR5925Mdl Softpay Servicos Ltda6009Sao Paulo62070503***63042BE4
+            </p>
+            <p>R$ <span>25,00</span></p>
+            <button class="btn-copy-pix">COPIAR CÓDIGO</button>
+          </div>
+
+          <div class="hr-centro"></div>
+
+          <div class="content-pix-right">
+            <p>
+              APÓS EFETUAR O PAGAMENTO ATUALIZE A PÁGINA PARA ATUALIZAR O SALDO!
+            </p>
+            <div class="como-pagar">
+              <h2>COMO PAGAR?</h2>
+              <p>1. Abra o aplicativo do seu banco e acesse a área Pix!</p>
+              <p>2. Selecione a opção pagar com código Pix Copia e Cola</p>
+              <p>3. Cole o código no espaço indicado no aplicativo</p>
+              <p>4. Efetue o pagamento e volte no site.</p>
+            </div>
+            <p class="msg-consentimento">Ao efetuar o pagamento você concorda com os termos de serviço.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/scripts.js"></script>
+</html>

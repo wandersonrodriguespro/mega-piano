@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Mega Piano - Pré Deposito</title>
+  </head>
+  <body>
+    <header>
+      <div class="btn-header">
+        <button class="btn-menu btn-menu-left" onclick="toggleMenuLeft(true)">
+          <img src="../img/mobile_menu.png" />
+        </button>
+        <div class="g-login">
+          <p>JÁ POSSUI CONTA:</p>
+          <a href="login.html"
+            ><button class="btn-header-login">CLIQUE AQUI</button></a
+          >
+        </div>
+      </div>
+
+      <nav id="nav-left">
+        <div class="menu-left" id="menu">
+          <div class="close" onclick="toggleMenuLeft(false)"><p>X</p></div>
+          <ul class="list-menu">
+            <li><a href="#">Depositar</a></li>
+            <li><a href="#">Sacar</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+            <li><a href="#">Afiliado</a></li>
+            <li><a href="#">Mega Piano</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Indique um amigo</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Conta</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-content">
+      <div class="container-main container-form-deposito">
+        <div class="container-img"><img src="../img/deposito.png" /></div>
+
+        <div class="title">
+          <p>FAÇA SEU DEPÓSITO</p>
+          <div class="hr-deposito"></div>
+        </div>
+        <p>
+          Deposite via PIX, prático, rápido e seguro! Seu saldo cai na hora e
+          você já começa a estourar e lucrar!
+        </p>
+
+        <div class="input-deposito">
+          <div class="name-cpf-deposito">
+            <div class="input-name">
+              <label for="name-deposito">Nome:</label>
+              <input
+                type="text"
+                id="name-deposito"
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <div class="input-cpf">
+              <label for="cpf-deposito">CPF:</label>
+              <input
+                type="number"
+                id="cpf-deposito"
+                placeholder="Digite seu CPF"
+              />
+            </div>
+          </div>
+
+          <div class="value-deposito">
+            <div class="input-value-deposito">
+              <label for="input-value-deposit">Valor Para Depósito:</label>
+              <input
+                type="number"
+                id="input-value-deposit"
+                placeholder="Digite um valor"
+              />
+            </div>
+            <div class="btns-value-deposito">
+              <div id="value-25" class="btn-value">
+                <span>R$25</span><span>+5 Bônus</span>
+              </div>
+              <div id="value-30" class="btn-value">
+                <span>R$30</span><span>+5 Bônus</span>
+              </div>
+              <div id="value-40" class="btn-value">
+                <span>R$40</span><span>+10 Bônus</span>
+              </div>
+              <div id="value-50" class="btn-value">
+                <span>R$50</span><span>+10 Bônus</span>
+              </div>
+              <div id="value-60" class="btn-value">
+                <span>R$60</span><span>+20 Bônus</span>
+              </div>
+              <div id="value-70" class="btn-value">
+                <span>R$70</span><span>+20 Bônus</span>
+              </div>
+              <div id="value-80" class="btn-value">
+                <span>R$80</span><span>+30 Bônus</span>
+              </div>
+              <div id="value-90" class="btn-value">
+                <span>R$90</span><span>+30 Bônus</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn-deposito-via-pix">DEPOSITAR VIA PIX!</button>
+        </div>
+
+        <div class="concentimento">
+          <div class="checkbox idade-minima">
+            <input
+              type="checkbox"
+              name="termos-de-serviço"
+              id="termos-de-serviço"
+            />
+            <label for="termos-de-serviço"
+              >Ao depositar você concorda com os termos de serviço!</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/scripts.js"></script>
+</html>

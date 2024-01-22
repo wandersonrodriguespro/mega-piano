@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Mega Piano - Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="btn-header">
+        <button class="btn-menu btn-menu-left" onclick="toggleMenuLeft(true)">
+          <img src="../img/mobile_menu.png" />
+        </button>
+        <div class="g-login">
+          <p>FAÇA SEU CADASTRO:</p>
+          <a href="cadastro.html"><button class="btn-header-login">CLIQUE AQUI</button></a>
+        </div>
+      </div>
+
+      <nav id="nav-left">
+        <div class="menu-left" id="menu">
+          <div class="close" onclick="toggleMenuLeft(false)"><p>X</p></div>
+          <ul class="list-menu">
+            <li><a href="#">Depositar</a></li>
+            <li><a href="#">Sacar</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/cadastro.html">Cadastrar</a></li>
+            <li><a href="#">Afiliado</a></li>
+            <li><a href="#">Mega Piano</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Indique um amigo</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Conta</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="container-content">
+      <div class="container-main">
+        <div class="container-img"><img src="../img/loguin.png"/></div>
+
+        <div class="title">
+          <p>FAÇA SEU LOGIN!</p>
+          <div class="hr-login"></div>
+        </div>
+
+        <div class="inputs-cadastro">
+          <div class="email">
+            <div class="input-email">
+              <label for="email">E-Mail:</label>
+              <input type="email" id="email" placeholder="Digite seu e-mail" />
+            </div>
+            
+            <div class="senha">
+              <label for="senha">Digite sua senha:</label>
+              <input type="password" id="senha" placeholder="Digite sua senha" />
+              <div class="checkbox">
+                <input type="checkbox" name="mostrar-senha" id="mostrar-senha" />
+                <label for="mostrar-senha">MOSTRAR SENHA</label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <span class="esqueceu-senha-login"">ESQUECEU A SUA SENHA ? <a href="reset-senha.html">CLIQUE AQUI!</a></span>
+
+        <button class="btn-pg-login">LOGAR</button>
+        <div class="concentimento">
+          <div class="checkbox termos">
+            <input type="checkbox" name="termos" id="termos" /> 
+            <label for="termos">Ao registrar você concorda com os termos de serviço.</label>
+          </div>
+          <div class="checkbox idade-minima">
+            <input type="checkbox" name="idade-minima" id="idade-minima" /> 
+            <label for="idade-minima">AO SE CADASTRAR NESSE SITE, DECLARO SER +18 ANOS DE IDADE.</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/scripts.js"></script>
+</html>

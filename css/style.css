@@ -1,0 +1,1168 @@
+@font-face {
+  font-family: "Agradir";
+  src: url("/font/behance-637fcad397009.ttf") format(opentype);
+}
+@font-face {
+  font-family: "Agradir-ligt";
+  src: url(/font/Agrandir-WideLight.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Agradir";
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url(/img/bg-completo.png);
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.container-img {
+  padding: 5px;
+  background-color: #0000009e;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -90px;
+  left: calc(50% - 50px);
+}
+
+.container-img img {
+  width: 100px;
+}
+
+.btn-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* MENU  */
+
+.btn-menu,
+.sacar {
+  background: #000000;
+  height: 30px;
+  width: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-logado {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-logado:hover {
+  scale: 1.2;
+}
+
+.user-logado img {
+  width: 35px;
+}
+
+.btn-menu:hover,
+.sacar:hover {
+  background-color: #26c211;
+  box-shadow: 0 0 12px -4px #fff;
+  scale: 1.1;
+}
+
+.sacar img {
+  width: 32px;
+}
+
+.btn-menu img {
+  width: 25px;
+  height: 25px;
+}
+
+#menu {
+  height: 100%;
+  background: #000000d1;
+  color: #fff;
+  transition: 0.7s ease;
+  visibility: hidden;
+  overflow-x: hidden;
+}
+
+.menu-right {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 0px;
+}
+
+.menu-left {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0px;
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 60px 25px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.list-menu a {
+  font-family: "Agradir-ligt";
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  transition: 0.5s;
+}
+
+.list-menu a:hover {
+  color: #26c211;
+}
+
+.list-menu a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #26c211;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.list-menu a:hover::after {
+  width: 100%;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10;
+  background: #ff3131;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.close:hover {
+  scale: 1.1;
+  background-color: #26c211;
+}
+
+/* ANIMATE MENU */
+
+#nav-right.active-right .menu-right,
+#nav-left.active-left .menu-left {
+  width: 350px;
+  visibility: visible;
+  z-index: 9;
+}
+
+#nav-right.active-right .close,
+#nav-left.active-left .close {
+  opacity: 1;
+}
+
+#nav-right.active-right .list-menu,
+#nav-left.active-left .list-menu {
+  opacity: 1;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* CONTENT */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.btn-jogar,
+.btn-value-pg-inicio {
+  background-color: #ff3131;
+  border: 5px solid #000;
+  color: #fff;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 30px;
+  transition: 0.4s ease;
+  text-shadow: 0 0 20px #fff;
+}
+
+.btn-jogar:hover,
+.btn-value-pg-inicio:hover {
+  background-color: #26c211;
+  border-color: #ff3131;
+  box-shadow: 0 0 12px -4px #fff;
+  scale: 1.1;
+}
+
+.content p {
+  margin: 10px auto 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hr-login,
+.hr-cadastro,
+.hr-login,
+.hr-prejogo,
+.hr-deposito,
+.hr-afiliado {
+  background-color: #fff;
+  height: 2px;
+  width: 160px;
+  margin: auto;
+}
+
+.login {
+  margin: 15px auto;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.login button {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 20px;
+
+  border: none;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.login button:hover {
+  scale: 1.1;
+  color: #2bdd14;
+  box-shadow: 0 0 12px -4px #fff;
+}
+
+/*  PAGE CADASTRO */
+
+.g-login {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.g-login p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* PAGE CADASTRO e LOGIN */
+
+.btn-header-login {
+  background: #000000;
+  color: #fff;
+  font-size: 11px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-header-login:hover {
+  background-color: #26c211;
+  box-shadow: 0 0 12px -4px #fff;
+  scale: 1.1;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+.container-main {
+  background-color: #0000009e;
+  border-radius: 30px;
+  color: #fff;
+  width: 80%;
+  max-width: 1280px;
+  padding: 20px 30px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-main p {
+  text-align: center;
+}
+
+.title {
+  margin: 7px auto 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.hr-cadastro,
+.hr-deposito,
+.hr-afiliado {
+  width: 90%;
+}
+
+.inputs-cadastro,
+.input-deposito,
+.container-pix,
+.container-content-afiliado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.email-telefone,
+.senha-repetsenha,
+.name-cpf-deposito,
+.value-deposito,
+.content-pix-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.senha-repetsenha,
+.value-deposito {
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.email-telefone label {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+#email::placeholder,
+#phone::placeholder,
+#senha::placeholder,
+#repetsenha::placeholder {
+  color: rgba(141, 141, 141, 0.445);
+  letter-spacing: 1px;
+}
+
+.input-email,
+.input-tel,
+.senha,
+.repet-senha,
+.input-name,
+.input-cpf,
+.input-value-deposito {
+  display: flex;
+  flex-direction: column;
+}
+
+.esqueceu-senha-login {
+  text-align: center;
+  margin: 0px auto 20px;
+  font-size: 14px;
+}
+
+.checkbox {
+  display: flex;
+  font-size: 10px;
+  gap: 5px;
+  align-items: center;
+}
+
+.checkbox p {
+  font-size: 12px;
+}
+
+.inputs-cadastro input,
+.input-deposito input,
+.container-pix input {
+  height: 25px;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+.btn-pg-cadastro,
+.btn-pg-login {
+  width: 150px;
+  height: 30px;
+  margin: auto;
+  border-radius: 15px;
+
+  font-size: 20px;
+}
+
+.btn-pg-cadastro:hover,
+.btn-pg-login:hover {
+  background-color: #26c211;
+  color: #fff;
+  scale: 1.1;
+  box-shadow: 0 0 12px -4px #fff;
+}
+
+.concentimento {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.termos,
+.idade-minima {
+  font-size: 8px;
+}
+
+/* CSS DA PÁGINA DE LOGIN */
+
+.email {
+  width: 100%;
+  margin: 10px auto 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container-form span {
+  margin: 0 auto 15px;
+  font-size: 12px;
+}
+
+.container-form a:hover {
+  color: #26c211;
+}
+
+.container-form a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #26c211;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.container-form a:hover::after {
+  width: 100%;
+}
+
+/* PAGINA DE RESET SENHA */
+
+.container-reset {
+  padding: 40px 30px;
+}
+
+.content-reset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+.star-reset {
+  margin: auto;
+  width: 120px;
+}
+
+.reset-senha {
+  margin: 25px auto;
+  width: 100%;
+}
+
+.reset-senha label {
+  text-align: center;
+  margin: 10px auto;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+/* PAGINA PRÉ JOGO */
+
+.header-cont-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.btn-depositar {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+
+  padding: 15px 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+/* PAGINA DEPOSITO */
+
+.container-form P:nth-child(3) {
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.3px;
+}
+
+.btn-depositar:hover {
+  scale: 1.1;
+  color: #2bdd14;
+  box-shadow: 0 0 12px -4px #fff;
+}
+
+.btn-deposito-via-pix {
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border-radius: 15px;
+
+  font-size: 20px;
+}
+
+.btn-deposito-via-pix:hover {
+  background-color: #26c211;
+  color: #fff;
+  scale: 1.05;
+  box-shadow: 0 0 12px -4px #fff;
+}
+
+.container-form-deposito {
+  padding: 20px;
+}
+
+.btns-value-deposito {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.btn-value {
+  height: 40px;
+  background-color: #000;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-value:hover {
+  scale: 1.1;
+  box-shadow: 0 0 20px -4px #24ff00;
+}
+
+.btn-value span {
+  font-size: 12px;
+  margin: 0;
+}
+
+.btn-value span:nth-child(2) {
+  font-size: 10px;
+  color: #24ff00;
+  text-shadow: 0 0 10px;
+}
+
+.name-cpf-deposito label {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* PAGINA DEPÓSITO PIX */
+
+.content-pix-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.content-pix-left p {
+  margin: 0 auto 5px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.content-pix-right p {
+  margin-top: 15px;
+  font-size: 9px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.btn-copy-pix,
+.btn-copy-link-afiliado {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.btn-copy-pix:hover,
+.btn-copy-link-afiliado:hover {
+  background-color: #26c211;
+  color: #fff;
+  scale: 1.05;
+  box-shadow: 0 0 12px -4px #fff;
+}
+
+.qr-code {
+  max-width: 150px;
+  margin: auto;
+}
+
+.hr-centro {
+  display: none;
+  width: 2px;
+  height: 70%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.como-pagar {
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.como-pagar h2 {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.como-pagar p {
+  margin: 0;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+p.url-pagamento {
+  margin: 5px auto;
+  font-size: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: rap;
+  text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto cortado */
+}
+
+/* PAGINA INICIO DE PARTIDA */
+
+.content-pagina-inicio {
+  padding-top: 0;
+  text-align: center;
+}
+.content-pagina-inicio p {
+  font-size: 12px;
+}
+
+.content-p-pagina-inicio {
+  margin: 15px auto;
+}
+
+.content-p-pagina-inicio p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.btns-pagina-inicio {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.container-notificacao {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notificacao {
+  width: 200px;
+  height: 60px;
+  background-color: #ffc30f;
+  border: 5px solid #000;
+  border-radius: 30px;
+  box-shadow: 0 0 12px -4px #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notificacao p {
+  font-size: 15px;
+  letter-spacing: 0.5;
+}
+
+.notificacao-right {
+  display: none;
+}
+
+.paddin-botton-cont-inicio {
+  padding-bottom: 55px;
+}
+
+.notificacao-left {
+  position: absolute;
+  bottom: -40px;
+  left: 16%;
+}
+
+.container-img-inicio img {
+  width: 180px;
+}
+
+.container-img-inicio {
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 90px);
+}
+
+/* PÁGINA DE AFILIADO */
+
+.content-p1-afiliado {
+  font-size: 11px;
+  margin: auto;
+}
+.link-afiliado {
+  text-align: center;
+}
+
+.link-afiliado span {
+  font-size: 11px;
+  margin: 4px auto;
+}
+
+.btn-copy-link-afiliado {
+  margin: 4px auto;
+}
+
+.title-left-afiliado {
+  max-width: 250px;
+  font-size: 18px;
+  text-align: center;
+
+  background-color: #000;
+  padding: 5px 15px;
+}
+
+.content-left-center-afiliado h2 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.content-left-center-afiliado p {
+  font-size: 16px;
+  margin: 15px 0;
+  text-align: start;
+  background-color: #000;
+  padding: 5px 15px;
+}
+
+.content-left-center-afiliado span {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.content-afiliado-center {
+  width: 40%;
+  /* display: flex;
+  align-items: center; */
+}
+
+.btn-sacar {
+  /* max-width: 100%; */
+  /* height: 50px; */
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 30px;
+  /* margin-top: -60px; */
+}
+
+.btn-sacar:hover {
+  background-color: #26c211;
+  color: #fff;
+  scale: 1.05;
+  box-shadow: 0 0 12px -4px #fff;
+}
+
+.content-afiliado-right {
+  width: 25%;
+}
+
+.content-afiliado-left {
+  text-align: left;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 250px) {
+  .btn-jogar,
+  .btn-value-pg-inicio {
+    max-width: 400px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 1.5em;
+  }
+  .login {
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url(/img/bg-desctop-novo.png);
+    background-size: cover;
+    background-position: top;
+  }
+  header {
+    max-width: 1400px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .container {
+    align-items: end;
+    padding-bottom: 30px;
+  }
+
+  .btn-jogar,
+  .btn-value-pg-inicio {
+    max-width: 400px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 45px;
+  }
+  .content p {
+    font-size: 30px;
+  }
+  .hr-login,
+  .hr-prejogo {
+    height: 2px;
+    width: 260px;
+  }
+
+  .login {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .login button {
+    width: 160px;
+  }
+
+  /* RESPONSIVIDADE PAGINA DE CADASTRO */
+
+  .container-img {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+  }
+
+  .container-form p {
+    font-size: 40px;
+  }
+
+  .email-telefone,
+  .senha-repetsenha,
+  .name-cpf-deposito,
+  .value-deposito,
+  .content-pix-right {
+    width: 40%;
+    padding: 10px;
+  }
+  .email-telefone label,
+  .senha-repetsenha label,
+  .btn-depositar label {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .email-telefone {
+    gap: 30px;
+  }
+
+  .btn-pg-cadastro,
+  .btn-pg-login {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+  }
+
+  .concentimento {
+    max-width: 80%;
+  }
+
+  .termos,
+  .idade-minima {
+    font-size: 0.8rem;
+  }
+
+  /* RESPONSIVO PAGINA DE LOGIN */
+
+  .email {
+    width: 50%;
+  }
+
+  .container-form span {
+    font-size: 19px;
+  }
+
+  .senha label,
+  .input-value-deposito label {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  /* RESPONSIVO PAGINA RESET SENHA */
+
+  .container-reset p {
+    font-size: 40px;
+  }
+
+  .reset-senha label {
+    margin: 10px auto;
+    font-size: 25px;
+  }
+
+  .star-reset {
+    width: 150px;
+  }
+
+  /* RESPONSIVIDADE PAGINA PRÉ DEPÓSITO */
+
+  .btn-deposito-via-pix {
+    width: 40%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    margin-top: -40px;
+  }
+
+  .container-form P:nth-child(3) {
+    font-size: 20px;
+    text-align: center;
+    max-width: 65%;
+    margin: auto;
+    letter-spacing: 1px;
+  }
+
+  .btn-value span {
+    font-size: 14px;
+  }
+
+  .name-cpf-deposito {
+    gap: 5px;
+  }
+
+  .btns-value-deposito {
+    gap: 20px;
+  }
+
+  .name-cpf-deposito label {
+    font-size: 25px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .input-value-deposito label {
+    font-size: 25px;
+  }
+
+  /* RESPONSIVIDADE PAGINA DEPÓSITO PIX */
+
+  .hr-centro {
+    display: flex;
+  }
+
+  .content-pix-left {
+    width: 40%;
+    padding-left: 65px;
+    gap: 5px;
+    justify-content: space-around;
+  }
+
+  .content-pix-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+  }
+
+  .content-pix-left p,
+  .content-pix-right p {
+    font-size: 20px;
+    letter-spacing: 0.5;
+  }
+
+  .btn-copy-pix,
+  .btn-copy-link-afiliado {
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+  }
+
+  .como-pagar h2 {
+    font-size: 20px;
+  }
+
+  .como-pagar p {
+    font-size: 15px;
+  }
+
+  .qr-code {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  p.url-pagamento {
+    display: none;
+  }
+
+  p.msg-consentimento {
+    font-size: 14px;
+  }
+
+  /* RESPONSIVIDADE PAGINA INICIO PARTIDA */
+
+  .notificacao p {
+    font-size: 16px;
+  }
+
+  .notificacao-right {
+    display: flex;
+  }
+
+  .notificacao-left {
+    bottom: -40px;
+    left: -25px;
+  }
+
+  .notificacao-right {
+    position: absolute;
+    bottom: -40px;
+    right: -25px;
+  }
+  .container-img-inicio img {
+    width: 250px;
+  }
+
+  .container-img-inicio {
+    position: absolute;
+    top: -18px;
+    left: calc(50% - 125px);
+  }
+
+  /* RESPONSIVIDADE PAGINA AFILIADO */
+
+  .content-p1-afiliado {
+    font-size: 17px;
+  }
+
+  .link-afiliado {
+    margin: 5px auto;
+  }
+
+  .link-afiliado span {
+    font-size: 17px;
+  }
+
+  .btn-copy-link-afiliado {
+    margin: 5px auto;
+    max-width: 40%;
+  }
+}
