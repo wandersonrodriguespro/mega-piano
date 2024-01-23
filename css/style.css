@@ -983,6 +983,111 @@ td {
   margin-bottom: 7px;
 }
 
+/* PÁGINA FAQ */
+
+.pg-faq h2 {
+  font-size: 35px;
+  margin-left: 30px;
+  letter-spacing: 3px;
+}
+
+.pg-faq h3 {
+  font-size: 17px;
+  letter-spacing: 0.7px;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+.pg-faq p {
+  font-family: "Agradir-ligt";
+  text-align: start;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.content-faq-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-faq-left p {
+  line-height: 13px;
+}
+.content-faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-faq-right ul li {
+  list-style: decimal;
+  letter-spacing: 1px;
+  font-family: "Agradir-ligt";
+  font-size: 10px;
+}
+
+.container-main-faq {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container-main.pg-faq {
+  width: 100%;
+  overflow: auto;
+}
+
+.refer {
+  border-radius: 30px;
+  color: #fff;
+  width: 80%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.refer .container-img img {
+  z-index: 5;
+}
+
+.container-img-faq-right {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  max-height: 15px;
+  background-color: #ef3cb5;
+}
+
+.container-img-mobile-faq {
+  width: 100%;
+}
+
+.container-img-left-faq-mobile img, .container-img-faq-right-faq-mobile img{
+  width: 90px;
+}
+
+.container-img-left-faq-mobile {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  z-index: 5;
+}
+
+.container-img-faq-right-faq-mobile {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  z-index: 5;
+}
+
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 250px) {
@@ -1363,6 +1468,76 @@ td {
     max-width: 80%;
     margin: 10px auto;
   }
+
+  /* RESPONSIVIDADE PAGINA FAQ */
+
+  .container-main-faq {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .pg-faq h2 {
+    font-size: 52px;
+    margin-left: 30px;
+    letter-spacing: 3px;
+  }
+
+  .pg-faq h3 {
+    font-size: 25px;
+    letter-spacing: 0.7px;
+    position: relative;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+  }
+
+  .pg-faq p {
+    font-family: "Agradir-ligt";
+    text-align: start;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .content-faq-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-faq-left p {
+    line-height: 20px;
+  }
+  .content-faq-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-faq-right ul li {
+    list-style: decimal;
+    letter-spacing: 1px;
+    font-family: "Agradir-ligt";
+    font-size: 12px;
+  }
+
+  /* RESPONSIVIDADE PAGINA FAQ */
+  .container-img-faq-right {
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    z-index: 5;
+  }
+  .container-img-faq-right img{
+   width: 130px;
+  }
+
+  .container-img-mobile-faq {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -1444,5 +1619,26 @@ td {
   .btn-sacar {
     font-size: 20px;
     margin: 10px auto;
+  }
+
+  /* RESPONSIVIDADE PAGINA FAQ */
+
+  .container-main-faq {
+    flex-direction: column;
+  }
+  .content-faq-left {
+    width: 100%;
+  }
+  .content-faq-right {
+    width: 100%;
+  }
+  .container-main-faq {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .refer {
+    height: 85%;
   }
 }
