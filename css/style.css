@@ -998,14 +998,14 @@ td {
   text-underline-offset: 7px;
 }
 
-.pg-faq p {
+.pg-faq p{
   font-family: "Agradir-ligt";
   text-align: start;
   font-size: 10px;
   letter-spacing: 1px;
 }
 
-.content-faq-left {
+.content-faq-left, .content-indique-left {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1014,7 +1014,7 @@ td {
 .content-faq-left p {
   line-height: 13px;
 }
-.content-faq-right {
+.content-faq-right, .content-indique-right {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1027,7 +1027,7 @@ td {
   font-size: 10px;
 }
 
-.container-main-faq {
+.container-main-faq, .main-indique {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -1086,6 +1086,34 @@ td {
   right: -30px;
   top: -30px;
   z-index: 5;
+}
+
+/* PÁGINA INDICAÇÃO */
+
+.content-main-indique {
+  margin-top: -70px;
+}
+
+
+.container-main-indique p {
+  font-family: "Agradir-ligt";
+  text-align: start;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.container-main-indique h2 {
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+
+.container-main-indique h3 {
+  font-size: 17px;
+  letter-spacing: 0.7px;
+  text-decoration: underline;
+  text-underline-offset: 7px;
 }
 
 /* RESPONSIVIDADE */
@@ -1471,7 +1499,7 @@ td {
 
   /* RESPONSIVIDADE PAGINA FAQ */
 
-  .container-main-faq {
+  .container-main-faq, .main-indique {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -1499,7 +1527,7 @@ td {
     letter-spacing: 1px;
   }
 
-  .content-faq-left {
+  .content-faq-left, .content-indique-left {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1509,7 +1537,7 @@ td {
   .content-faq-left p {
     line-height: 20px;
   }
-  .content-faq-right {
+  .content-faq-right, .content-indique-right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1537,6 +1565,36 @@ td {
 
   .container-img-mobile-faq {
     display: none;
+  }
+
+  /* RESPONSIVIDADE PAGINA INDIQUE */
+
+  .content-main-indique {
+    margin-top: 0;
+  }
+  
+  
+  .container-main-indique p {
+    font-family: "Agradir-ligt";
+    text-align: start;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+  
+  .container-main-indique h2 {
+    font-size: 45px;
+    max-width: 70%;
+    margin: auto;
+  }
+  
+  
+  .container-main-indique h3 {
+    font-size: 25px;
+  }
+  .content-faq-right p{
+    line-height: 41px;
+    font-size: 20px;
   }
 }
 
@@ -1623,16 +1681,16 @@ td {
 
   /* RESPONSIVIDADE PAGINA FAQ */
 
-  .container-main-faq {
+  .container-main-faq, .main-indique {
     flex-direction: column;
   }
-  .content-faq-left {
+  .content-faq-left, .content-indique-left {
     width: 100%;
   }
-  .content-faq-right {
+  .content-faq-right, .content-indique-right {
     width: 100%;
   }
-  .container-main-faq {
+  .container-main-faq, .main-indique {
     gap: 10px;
   }
 }
