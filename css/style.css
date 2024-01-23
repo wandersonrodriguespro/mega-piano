@@ -52,7 +52,7 @@ header {
   align-items: center;
   margin: auto;
   padding: 0 15px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .container-img {
@@ -969,6 +969,20 @@ td {
   margin-bottom: 45px;
 }
 
+/* PÁGINA SOBRE */
+
+.img-pg-sobre img {
+  width: 250px;
+  margin: auto;
+  display: block;
+}
+
+.main-sobre p {
+  font-size: 12px;
+  letter-spacing: 0.6;
+  margin-bottom: 7px;
+}
+
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 250px) {
@@ -1335,6 +1349,19 @@ td {
     margin: auto;
     font-size: 18px;
     margin-top: 10px;
+  }
+
+  /* RESPONSIVIDADE PÁGINA SOBRE */
+
+  .img-pg-sobre img {
+    width: 350px;
+  }
+
+  .main-sobre p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    max-width: 80%;
+    margin: 10px auto;
   }
 }
 
