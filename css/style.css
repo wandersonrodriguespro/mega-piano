@@ -998,14 +998,15 @@ td {
   text-underline-offset: 7px;
 }
 
-.pg-faq p{
+.pg-faq p {
   font-family: "Agradir-ligt";
   text-align: start;
   font-size: 10px;
   letter-spacing: 1px;
 }
 
-.content-faq-left, .content-indique-left {
+.content-faq-left,
+.content-indique-left {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1014,7 +1015,8 @@ td {
 .content-faq-left p {
   line-height: 13px;
 }
-.content-faq-right, .content-indique-right {
+.content-faq-right,
+.content-indique-right {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1027,7 +1029,8 @@ td {
   font-size: 10px;
 }
 
-.container-main-faq, .main-indique {
+.container-main-faq,
+.main-indique {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -1070,7 +1073,8 @@ td {
   width: 100%;
 }
 
-.container-img-left-faq-mobile img, .container-img-faq-right-faq-mobile img{
+.container-img-left-faq-mobile img,
+.container-img-faq-right-faq-mobile img {
   width: 90px;
 }
 
@@ -1094,7 +1098,6 @@ td {
   margin-top: -70px;
 }
 
-
 .container-main-indique p {
   font-family: "Agradir-ligt";
   text-align: start;
@@ -1108,12 +1111,44 @@ td {
   text-align: center;
 }
 
-
 .container-main-indique h3 {
   font-size: 17px;
   letter-spacing: 0.7px;
   text-decoration: underline;
   text-underline-offset: 7px;
+}
+
+/* PÁGINA DE TERMOS */
+
+.refer-overflow {
+  height: 100%;
+  width: 95%;
+}
+.main-termos {
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  background-color: #ffffffd9;
+  color: #000;
+  backdrop-filter: blur(9px);
+}
+
+.main-termos h2 {
+  font-size: 35px;
+}
+
+.main-termos h3 {
+  font-size: 25px;
+  margin: 15px auto;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+.main-termos p {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-align: justify;
 }
 
 /* RESPONSIVIDADE */
@@ -1499,7 +1534,8 @@ td {
 
   /* RESPONSIVIDADE PAGINA FAQ */
 
-  .container-main-faq, .main-indique {
+  .container-main-faq,
+  .main-indique {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -1527,7 +1563,8 @@ td {
     letter-spacing: 1px;
   }
 
-  .content-faq-left, .content-indique-left {
+  .content-faq-left,
+  .content-indique-left {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1537,7 +1574,8 @@ td {
   .content-faq-left p {
     line-height: 20px;
   }
-  .content-faq-right, .content-indique-right {
+  .content-faq-right,
+  .content-indique-right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1559,8 +1597,8 @@ td {
     right: -50px;
     z-index: 5;
   }
-  .container-img-faq-right img{
-   width: 130px;
+  .container-img-faq-right img {
+    width: 130px;
   }
 
   .container-img-mobile-faq {
@@ -1572,8 +1610,7 @@ td {
   .content-main-indique {
     margin-top: 0;
   }
-  
-  
+
   .container-main-indique p {
     font-family: "Agradir-ligt";
     text-align: start;
@@ -1581,20 +1618,19 @@ td {
     letter-spacing: 1px;
     line-height: 25px;
   }
-  
+
   .container-main-indique h2 {
     font-size: 45px;
     max-width: 70%;
     margin: auto;
   }
-  
-  
+
   .container-main-indique h3 {
     font-size: 25px;
   }
-  .content-faq-right p{
-    line-height: 41px;
-    font-size: 20px;
+  .content-indique-right p {
+    line-height: 40px;
+    font-size: 24px;
   }
 }
 
@@ -1681,16 +1717,20 @@ td {
 
   /* RESPONSIVIDADE PAGINA FAQ */
 
-  .container-main-faq, .main-indique {
+  .container-main-faq,
+  .main-indique {
     flex-direction: column;
   }
-  .content-faq-left, .content-indique-left {
+  .content-faq-left,
+  .content-indique-left {
     width: 100%;
   }
-  .content-faq-right, .content-indique-right {
+  .content-faq-right,
+  .content-indique-right {
     width: 100%;
   }
-  .container-main-faq, .main-indique {
+  .container-main-faq,
+  .main-indique {
     gap: 10px;
   }
 }
