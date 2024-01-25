@@ -1060,11 +1060,11 @@ td {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  width: 2px;
+  width: 5px;
   max-height: 15px;
   background-color: #ef3cb5;
 }
@@ -1149,6 +1149,7 @@ td {
   line-height: 18px;
   letter-spacing: 0.5px;
   text-align: justify;
+  margin: 5px 0;
 }
 
 /* RESPONSIVIDADE */
