@@ -280,12 +280,13 @@ input[type="checkbox"]:checked + label:before {
 
 .btn-jogar,
 .btn-value-pg-inicio {
+  padding: 5px 30px;
   background-color: #ff3131;
   border: 5px solid #000;
   color: #fff;
-  max-width: 300px;
+  /* max-width: 300px; */
   width: 100%;
-  height: 60px;
+  /* height: 60px; */
   border-radius: 20px;
   font-size: 30px;
   transition: 0.4s ease;
@@ -344,8 +345,6 @@ input[type="checkbox"]:checked + label:before {
 
 .login button:hover {
   scale: 1.1;
-  /* color: #2bdd14; */
-  /* color: #ef3cb5; */
   box-shadow: 0 0 12px -4px #fff;
 }
 
@@ -363,6 +362,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 /* PAGE CADASTRO e LOGIN */
+
+.container-content-cadastro {
+  margin-top: 0px;
+}
 
 .btn-header-login {
   background: #000000;
@@ -510,6 +513,14 @@ input[type="checkbox"]:checked + label:before {
 
 input:focus::placeholder {
   opacity: 0;
+}
+
+.input-value-saque input::placeholder {
+  opacity: 0;
+}
+
+.input-value-saque input:focus::placeholder {
+  opacity: 1;
 }
 
 .btn-pg-cadastro,
@@ -1197,8 +1208,8 @@ td {
 @media screen and (max-width: 250px) {
   .btn-jogar,
   .btn-value-pg-inicio {
-    max-width: 400px;
-    height: 70px;
+    /* max-width: 400px; */
+    /* height: 70px; */
     border-radius: 30px;
     font-size: 1.5em;
   }
@@ -1242,8 +1253,9 @@ td {
 
   .btn-jogar,
   .btn-value-pg-inicio {
-    max-width: 400px;
-    height: 70px;
+    /* max-width: 400px; */
+    padding: 5px 40px;
+    /* height: 70px; */
     border-radius: 30px;
     font-size: 45px;
   }
@@ -1268,9 +1280,6 @@ td {
 
   /* RESPONSIVIDADE PAGINA DE CADASTRO */
 
-  .container-content-cadastro {
-    margin-top: 70px;
-  }
 
   .container-img {
     position: absolute;
@@ -1689,7 +1698,6 @@ td {
     font-size: 24px;
   }
 }
-
 
 
 @media screen and (max-width: 850px) {
