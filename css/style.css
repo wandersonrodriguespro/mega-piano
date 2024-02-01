@@ -52,7 +52,7 @@ header {
   align-items: center;
   margin: auto;
   padding: 0 15px;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 label {
@@ -266,7 +266,7 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .content {
@@ -275,7 +275,7 @@ input[type="checkbox"]:checked + label:before {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .btn-jogar,
@@ -502,7 +502,7 @@ input[type="checkbox"]:checked + label:before {
 .input-deposito input,
 .container-pix input,
 .container-input-conta input {
-  height: 25px;
+  height: 40px;
   padding: 0 10px;
   font-size: 12px;
   border-radius: 3px;
@@ -642,9 +642,9 @@ input:focus::placeholder {
 }
 
 .btn-depositar:hover {
+  background: #ef3cb5;
   scale: 1.1;
   /* color: #2bdd14; */
-  color: #ef3cb5;
   box-shadow: 0 0 12px -4px #fff;
 }
 
@@ -691,7 +691,8 @@ input:focus::placeholder {
 
 .btn-value:hover {
   scale: 1.1;
-  box-shadow: 0 0 20px -4px #ef3cb5;
+  box-shadow: 0 0 20px -4px #fff;
+  background-color: #ef3cb5;
 }
 
 .btn-value span {
@@ -845,9 +846,7 @@ p.url-pagamento {
   display: none;
 }
 
-.paddin-botton-cont-inicio {
-  padding-bottom: 55px;
-}
+
 
 .notificacao-left {
   position: absolute;
@@ -1207,9 +1206,20 @@ td {
     gap: 10px;
     justify-content: center;
   }
+
+  header {
+    margin-bottom: 0px;
+  }
+  
 }
 
 @media screen and (min-width: 500px) {
+
+  .container-content-painel-afiliado {
+    margin-top: 0px;
+  }
+
+  
   body {
     /* background-image: url(/img/bgdesktopnovo.png); */
     background-image: url(https://raw.githubusercontent.com/wandersonrodriguespro/mega-piano/main/img/bgdesktopnovo.png);
@@ -1257,6 +1267,10 @@ td {
   }
 
   /* RESPONSIVIDADE PAGINA DE CADASTRO */
+
+  .container-content-cadastro {
+    margin-top: 70px;
+  }
 
   .container-img {
     position: absolute;
@@ -1676,8 +1690,41 @@ td {
   }
 }
 
-@media screen and (max-width: 980px) {
 
+
+@media screen and (max-width: 850px) {
+
+  .main-sobre p {
+    font-size: 15px;
+  }
+  .refer {
+    height: 85%;
+  }
+
+  .container-content-deposito-pix {
+    margin-top: 70px;
+  }
+
+  .container-pix {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .content-pix-left {
+    width: 100%;
+  }
+  .content-pix-right {
+    width: 100%;
+  }
+
+
+  .container-main-indique h2 {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
   label {
     margin-bottom: 5px;
   }
@@ -1779,10 +1826,23 @@ td {
   .main-indique {
     gap: 10px;
   }
+
+  .input-deposito {
+    flex-direction: column;
 }
 
-@media screen and (max-width: 850px) {
-  .refer {
-    height: 85%;
+.name-cpf-deposito {
+  width: 100%;
+}
+
+.container-saque {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 1100px) {
+  button.btn-copy-pix {
+    font-size: 20px;
   }
 }
