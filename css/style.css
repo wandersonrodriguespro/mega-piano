@@ -108,7 +108,8 @@ header {
 
 .btn-menu:hover,
 .sacar:hover {
-  background-color: #26c211;
+  background-color: #ef3cb5;
+  /* background-color: #26c211; */
   box-shadow: 0 0 12px -4px #fff;
   scale: 1.1;
 }
@@ -164,14 +165,16 @@ header {
 }
 
 .list-menu a:hover {
-  color: #26c211;
+  /* color: #26c211; */
+  color: #ef3cb5;
 }
 
 .list-menu a::after {
   content: " ";
   width: 0%;
   height: 2px;
-  background-color: #26c211;
+  /* background-color: #26c211; */
+  background-color: #ef3cb5;
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -202,7 +205,8 @@ header {
 
 .close:hover {
   scale: 1.1;
-  background-color: #26c211;
+  /* background-color: #26c211; */
+  background-color: #ef3cb5;
 }
 
 /* ANIMATE MENU */
@@ -262,8 +266,9 @@ header {
 
 .btn-jogar:hover,
 .btn-value-pg-inicio:hover {
-  background-color: #26c211;
-  border-color: #ff3131;
+  /* background-color: #26c211; */
+  background-color: #ef3cb5;
+  /* border-color: #ff3131; */
   box-shadow: 0 0 12px -4px #fff;
   scale: 1.1;
 }
@@ -310,7 +315,8 @@ header {
 
 .login button:hover {
   scale: 1.1;
-  color: #2bdd14;
+  /* color: #2bdd14; */
+  /* color: #ef3cb5; */
   box-shadow: 0 0 12px -4px #fff;
 }
 
@@ -343,7 +349,8 @@ header {
 }
 
 .btn-header-login:hover {
-  background-color: #26c211;
+  /* background-color: #26c211; */
+  background-color: #ef3cb5;
   box-shadow: 0 0 12px -4px #fff;
   scale: 1.1;
 }
@@ -488,7 +495,8 @@ input:focus::placeholder {
 
 .btn-pg-cadastro:hover,
 .btn-pg-login:hover {
-  background-color: #26c211;
+  background-color: #ef3cb5;
+  /* background-color: #26c211; */
   color: #fff;
   scale: 1.1;
   box-shadow: 0 0 12px -4px #fff;
@@ -522,14 +530,15 @@ input:focus::placeholder {
 }
 
 .container-form a:hover {
-  color: #26c211;
+  /* color: #26c211; */
+  color: #ef3cb5;
 }
 
 .container-form a::after {
   content: " ";
   width: 0%;
   height: 2px;
-  background-color: #26c211;
+  background-color: #ef3cb5;
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -605,7 +614,8 @@ input:focus::placeholder {
 
 .btn-depositar:hover {
   scale: 1.1;
-  color: #2bdd14;
+  /* color: #2bdd14; */
+  color: #ef3cb5;
   box-shadow: 0 0 12px -4px #fff;
 }
 
@@ -621,7 +631,8 @@ input:focus::placeholder {
 
 .btn-deposito-via-pix:hover,
 .btn-saque:hover {
-  background-color: #26c211;
+  background-color: #ef3cb5;
+  /* background-color: #26c211; */
   color: #fff;
   scale: 1.05;
   box-shadow: 0 0 12px -4px #fff;
@@ -651,7 +662,7 @@ input:focus::placeholder {
 
 .btn-value:hover {
   scale: 1.1;
-  box-shadow: 0 0 20px -4px #24ff00;
+  box-shadow: 0 0 20px -4px #ef3cb5;
 }
 
 .btn-value span {
@@ -704,7 +715,8 @@ input:focus::placeholder {
 
 .btn-copy-pix:hover,
 .btn-copy-link-afiliado:hover {
-  background-color: #26c211;
+  /* background-color: #26c211; */
+  background-color: #ef3cb5;
   color: #fff;
   scale: 1.05;
   box-shadow: 0 0 12px -4px #fff;
