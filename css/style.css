@@ -268,6 +268,7 @@ header {
 .btn-value-pg-inicio:hover {
   /* background-color: #26c211; */
   background-color: #ef3cb5;
+  color: #000;
   /* border-color: #ff3131; */
   box-shadow: 0 0 12px -4px #fff;
   scale: 1.1;
