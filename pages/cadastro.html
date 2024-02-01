@@ -40,7 +40,7 @@
     </header>
 
     <div class="container-content container-content-cadastro">
-      <div class="container-main">
+      <div class="container-main container-main-cadastro">
         <div class="container-img">
           <img src="../img/Anotacao.png" alt="" />
         </div>
@@ -64,36 +64,27 @@
           <div class="senha-repetsenha">
             <div class="senha">
               <label for="senha">Digite sua senha:</label>
-              <input
-                type="password"
-                id="senha"
-                placeholder="Digite sua senha"
-              />
+              <input class="campo-senha" type="password" id="senha" placeholder="Digite sua senha"/>
+              
               <div class="checkbox">
-                <input
-                  type="checkbox"
-                  name="mostrar-senha"
-                  id="mostrar-senha"
-                />
-                <label for="mostrar-senha">MOSTRAR SENHA</label>
+                <input class="btn-mostrar-senha" type="checkbox" name="mostrar-senha" id="mostrar-senha" />
+                <label class="label-senha" for="mostrar-senha">MOSTRAR SENHA</label>
               </div>
+
             </div>
 
             <div class="repet-senha">
               <label for="repetsenha">Digite sua senha:</label>
-              <input
-                type="password"
-                id="repetsenha"
-                placeholder="Digite sua senha"
-              />
+              <input class="campo-repetir-senha" type="password" id="repetsenha" placeholder="Digite sua senha" />
+              
               <div class="checkbox">
-                <input type="checkbox" name="repet-senha" id="repet-senha" />
+                <input class="btn-mostrar-repetir-senha" type="checkbox" name="repet-senha" id="repet-senha" />
                 <label for="repet-senha">MOSTRAR SENHA</label>
               </div>
             </div>
           </div>
         </div>
-        <button class="btn-pg-cadastro">Cadastrar</button>
+        <a href="pre-jogo.html"><button class="btn-pg-cadastro">Cadastrar</button></a>
         <div class="concentimento">
           <div class="checkbox termos">
             <input type="checkbox" name="termos" id="termos" />
