@@ -55,6 +55,34 @@ header {
   margin-bottom: 70px;
 }
 
+label {
+  display: flex;
+  align-content: center;
+  align-items: flex-end;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: url(../img/check-off.svg) no-repeat;
+  background-size: 23px 23px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: url(../img/check-on.svg) no-repeat;
+  background-size: 23px 23px;
+}
+
 .container-img {
   padding: 5px;
   background-color: #0000009e;
@@ -1649,6 +1677,10 @@ td {
 }
 
 @media screen and (max-width: 980px) {
+
+  label {
+    margin-bottom: 5px;
+  }
   .content-afiliado-right table {
     display: none;
   }
