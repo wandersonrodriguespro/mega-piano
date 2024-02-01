@@ -13,7 +13,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Agradir";
+  font-family: "Agradir", sans-serif;
   font-weight: bold;
   border: none;
   outline: none;
@@ -38,7 +38,6 @@ button {
 body {
   width: 100%;
   height: calc(100vh - 50px);
-  /* background-image: url(/img/bg-completo.png); */
   background-image: url(https://raw.githubusercontent.com/wandersonrodriguespro/mega-piano/main/img/bg-completo.png);
   background-attachment: fixed;
   background-position: top;
@@ -186,7 +185,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .list-menu a {
-  font-family: "Agradir-ligt";
+  font-family: "Agradir-ligt", sans-serif;
   font-size: 15px;
   letter-spacing: 1.2px;
   transition: 0.5s;
@@ -1066,7 +1065,7 @@ td {
 }
 
 .pg-faq p {
-  font-family: "Agradir-ligt";
+  font-family: "Agradir-ligt", sans-serif;
   text-align: start;
   font-size: 10px;
   letter-spacing: 1px;
@@ -1092,7 +1091,7 @@ td {
 .content-faq-right ul li {
   list-style: decimal;
   letter-spacing: 1px;
-  font-family: "Agradir-ligt";
+  font-family: "Agradir-ligt", sans-serif;
   font-size: 10px;
 }
 
@@ -1166,7 +1165,7 @@ td {
 }
 
 .container-main-indique p {
-  font-family: "Agradir-ligt";
+  font-family: "Agradir-ligt", sans-serif;
   text-align: start;
   font-size: 10px;
   letter-spacing: 1px;
@@ -1644,7 +1643,7 @@ td {
   }
 
   .pg-faq p {
-    font-family: "Agradir-ligt";
+    font-family: "Agradir-ligt", sans-serif;
     text-align: start;
     font-size: 12px;
     letter-spacing: 1px;
@@ -1672,7 +1671,7 @@ td {
   .content-faq-right ul li {
     list-style: decimal;
     letter-spacing: 1px;
-    font-family: "Agradir-ligt";
+    font-family: "Agradir-ligt", sans-serif;
     font-size: 12px;
   }
 
@@ -1699,7 +1698,7 @@ td {
   }
 
   .container-main-indique p {
-    font-family: "Agradir-ligt";
+    font-family: "Agradir-ligt", sans-serif;
     text-align: start;
     font-size: 17px;
     letter-spacing: 1px;
