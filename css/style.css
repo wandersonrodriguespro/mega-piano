@@ -295,6 +295,10 @@ input[type="checkbox"]:checked + label:before {
   text-shadow: 0 0 20px #fff;
 }
 
+button.btn-value-pg-inicio.btn-jogar-pg-sobre {
+  font-size: 20px;
+}
+
 .btn-jogar:hover,
 .btn-value-pg-inicio:hover {
   /* background-color: #26c211; */
@@ -367,10 +371,6 @@ input[type="checkbox"]:checked + label:before {
 /* PAGE CADASTRO e LOGIN */
 
 
-
-.container-content-cadastro {
-  margin-top: 0px;
-}
 
 .btn-header-login {
   background: #000000;
@@ -845,6 +845,8 @@ p.url-pagamento {
   width: 100%;
 }
 
+
+
 .container-notificacao {
   width: 100%;
   display: flex;
@@ -1160,9 +1162,7 @@ td {
 
 /* PÁGINA INDICAÇÃO */
 
-.content-main-indique {
-  margin-top: -70px;
-}
+
 
 .container-main-indique p {
   font-family: "Agradir-ligt", sans-serif;
@@ -1218,6 +1218,18 @@ td {
   margin: 5px 0;
 }
 
+.container-main-login a {
+  margin: auto;
+}
+
+.container-content-sacar, .container-content-cadastro, .container-content-painel-afiliado, .container-content-sobre, .container-content-faq {
+  margin-top: 70px;
+}
+
+.container-content-painel-afiliado, .container-content-pre-deposito {
+  margin-top: 90px;
+}
+
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 250px) {
@@ -1239,12 +1251,16 @@ td {
 }
 
 @media screen and (min-width: 500px) {
-  .paddin-botton-cont-inicio {
-    padding-bottom: 60px;
+
+  button.btn-value-pg-inicio.btn-jogar-pg-sobre {
+    font-size: 30px;
   }
 
-  .container-content-painel-afiliado {
+  .container-content-pre-deposito, .container-content-sacar, .container-content-cadastro, .container-content-painel-afiliado, .container-content-sobre, .container-content-faq {
     margin-top: 0px;
+  }
+  .paddin-botton-cont-inicio {
+    padding-bottom: 60px;
   }
 
   body {
