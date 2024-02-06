@@ -370,8 +370,6 @@ button.btn-value-pg-inicio.btn-jogar-pg-sobre {
 
 /* PAGE CADASTRO e LOGIN */
 
-
-
 .btn-header-login {
   background: #000000;
   color: #fff;
@@ -814,7 +812,6 @@ p.url-pagamento {
 
 /* PAGINA INICIO DE PARTIDA */
 
-
 .paddin-botton-cont-inicio {
   padding-bottom: 80px;
 }
@@ -845,8 +842,6 @@ p.url-pagamento {
   width: 100%;
 }
 
-
-
 .container-notificacao {
   width: 100%;
   display: flex;
@@ -874,13 +869,40 @@ p.url-pagamento {
 
 .notificacao-right {
   display: none;
+  opacity: 0;
 }
 
 .notificacao-left {
   position: absolute;
   bottom: -40px;
   left: 16%;
+  opacity: 0;
 }
+
+/* Efeito da Notificação */
+
+/* .notificacao-left,
+.notificacao-right {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+} */
+
+
+
+.notificacao {
+  opacity: 0;
+  transform: translateY(100%);
+  scale: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, scale 0.5s ease-in-out;
+}
+
+.container-notificacao {
+  overflow: hidden;
+}
+
+/* ************* */
+
 
 .container-img-inicio img {
   width: 180px;
@@ -1162,8 +1184,6 @@ td {
 
 /* PÁGINA INDICAÇÃO */
 
-
-
 .container-main-indique p {
   font-family: "Agradir-ligt", sans-serif;
   text-align: start;
@@ -1222,11 +1242,16 @@ td {
   margin: auto;
 }
 
-.container-content-sacar, .container-content-cadastro, .container-content-painel-afiliado, .container-content-sobre, .container-content-faq {
+.container-content-sacar,
+.container-content-cadastro,
+.container-content-painel-afiliado,
+.container-content-sobre,
+.container-content-faq {
   margin-top: 70px;
 }
 
-.container-content-painel-afiliado, .container-content-pre-deposito {
+.container-content-painel-afiliado,
+.container-content-pre-deposito {
   margin-top: 90px;
 }
 
@@ -1251,12 +1276,16 @@ td {
 }
 
 @media screen and (min-width: 500px) {
-
   button.btn-value-pg-inicio.btn-jogar-pg-sobre {
     font-size: 30px;
   }
 
-  .container-content-pre-deposito, .container-content-sacar, .container-content-cadastro, .container-content-painel-afiliado, .container-content-sobre, .container-content-faq {
+  .container-content-pre-deposito,
+  .container-content-sacar,
+  .container-content-cadastro,
+  .container-content-painel-afiliado,
+  .container-content-sobre,
+  .container-content-faq {
     margin-top: 0px;
   }
   .paddin-botton-cont-inicio {
@@ -1351,7 +1380,8 @@ td {
     font-size: 30px;
   }
 
-  .container-main-cadastro a, .container-main-login a{
+  .container-main-cadastro a,
+  .container-main-login a {
     width: max-content;
     margin: auto;
   }
@@ -1523,8 +1553,6 @@ td {
     top: -18px;
     left: calc(50% - 125px);
   }
-
-  
 
   /* RESPONSIVIDADE PAGINA AFILIADO */
 
