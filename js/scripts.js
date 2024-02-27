@@ -25,15 +25,18 @@ const campoRepetirSenha = document.querySelector(".campo-repetir-senha");
 const btnMostarRepetirSenha = document.querySelector(".btn-mostrar-repetir-senha");
 
 btnMostarSenha.addEventListener("change", () => {
-  const estadoAtualDoCampoDESenha =
-    campoSenha.getAttribute("type") === "password" ? "text" : "password";
+  const estadoAtualDoCampoDESenha = campoSenha.getAttribute("type") === "password" ? "text" : "password";
 
   campoSenha.setAttribute("type", estadoAtualDoCampoDESenha);
 });
 
 btnMostarRepetirSenha.addEventListener("change", () => {
-  const estadoAtualDoCampoRepetirSenha =
-    campoRepetirSenha.getAttribute("type") === "password" ? "text" : "password";
+  const estadoAtualDoCampoRepetirSenha = campoRepetirSenha.getAttribute("type") === "password" ? "text" : "password";
 
   campoRepetirSenha.setAttribute("type", estadoAtualDoCampoRepetirSenha);
 });
+
+
+const input = document.querySelectorAll(".input-info-conta");
+
+input.disabled = true;

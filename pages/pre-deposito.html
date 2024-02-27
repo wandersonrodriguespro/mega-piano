@@ -14,9 +14,7 @@
         </button>
         <div class="g-login">
           <p>JÁ POSSUI CONTA:</p>
-          <a href="login.html"
-            ><button class="btn-header-login">CLIQUE AQUI</button></a
-          >
+          <a href="login.html"><button class="btn-header-login">CLIQUE AQUI</button></a>
         </div>
       </div>
 
@@ -47,84 +45,50 @@
           <p>FAÇA SEU DEPÓSITO</p>
           <div class="hr-deposito"></div>
         </div>
-        <p>
-          Deposite via PIX, prático, rápido e seguro! Seu saldo cai na hora e
-          você já começa a estourar e lucrar!
-        </p>
+        <p>Deposite via PIX, prático, rápido e seguro! Seu saldo cai na hora e você já começa a estourar e lucrar!</p>
 
         <div class="input-deposito">
           <div class="name-cpf-deposito">
             <div class="input-name">
               <label for="name-deposito">Nome:</label>
-              <input
-                type="text"
-                id="name-deposito"
-                placeholder="Digite seu nome"
-              />
+              <input type="text" id="name-deposito" placeholder="Digite seu nome" />
             </div>
             <div class="input-cpf">
               <label for="cpf-deposito">CPF:</label>
-              <input
-                type="number"
-                id="cpf-deposito"
-                placeholder="Digite seu CPF"
-              />
+              <input type="number" id="cpf-deposito" placeholder="Digite seu CPF" />
             </div>
           </div>
 
           <div class="value-deposito">
             <div class="input-value-deposito">
               <label for="input-value-deposit">Valor Para Depósito:</label>
-              <input
-                type="number"
-                id="input-value-deposit"
-                placeholder="Digite um valor"
-              />
+              <input type="number" id="input-value-deposit" placeholder="Digite um valor" />
             </div>
             <div class="btns-value-deposito">
-              <div id="value-25" class="btn-value">
-                <span>R$25</span><span>+5 Bônus</span>
-              </div>
-              <div id="value-30" class="btn-value">
-                <span>R$30</span><span>+5 Bônus</span>
-              </div>
-              <div id="value-40" class="btn-value">
-                <span>R$40</span><span>+10 Bônus</span>
-              </div>
-              <div id="value-50" class="btn-value">
-                <span>R$50</span><span>+10 Bônus</span>
-              </div>
-              <div id="value-60" class="btn-value">
-                <span>R$60</span><span>+20 Bônus</span>
-              </div>
-              <div id="value-70" class="btn-value">
-                <span>R$70</span><span>+20 Bônus</span>
-              </div>
-              <div id="value-80" class="btn-value">
-                <span>R$80</span><span>+30 Bônus</span>
-              </div>
-              <div id="value-90" class="btn-value">
-                <span>R$90</span><span>+30 Bônus</span>
-              </div>
+              <div id="value25" class="btn-value" data-valor="30.00"><span>R$25</span><span>+5 Bônus</span></div>
+              <div id="value30" class="btn-value" data-valor="35.00"><span>R$30</span><span>+5 Bônus</span></div>
+              <div id="value40" class="btn-value" data-valor="50.00"><span>R$40</span><span>+10 Bônus</span></div>
+              <div id="value50" class="btn-value" data-valor="60.00"><span>R$50</span><span>+10 Bônus</span></div>
+              <div id="value60" class="btn-value" data-valor="80.00"><span>R$60</span><span>+20 Bônus</span></div>
+              <div id="value70" class="btn-value" data-valor="90.00"><span>R$70</span><span>+20 Bônus</span></div>
+              <div id="value80" class="btn-value" data-valor="110.00"><span>R$80</span><span>+30 Bônus</span></div>
+              <div id="value90" class="btn-value" data-valor="120.00"><span>R$90</span><span>+30 Bônus</span></div>
             </div>
           </div>
-          <div class="container-btn-depositovia-pix"><a href="deposito-pix.html"><button class="btn-deposito-via-pix">DEPOSITAR VIA PIX!</button></a></div>
+          <div class="container-btn-depositovia-pix">
+            <a href="deposito-pix.html"><button class="btn-deposito-via-pix">DEPOSITAR VIA PIX!</button></a>
+          </div>
         </div>
 
         <div class="concentimento">
           <div class="checkbox idade-minima">
-            <input
-              type="checkbox"
-              name="termos-de-serviço"
-              id="termos-de-serviço"
-            />
-            <label for="termos-de-serviço"
-              >Ao depositar você concorda com os termos de serviço!</label
-            >
+            <input type="checkbox" name="termos-de-serviço" id="termos-de-serviço" />
+            <label for="termos-de-serviço">Ao depositar você concorda com os termos de serviço!</label>
           </div>
         </div>
       </div>
     </div>
   </body>
   <script src="../js/scripts.js"></script>
+  <script src="../js/includValue.js"></script>
 </html>

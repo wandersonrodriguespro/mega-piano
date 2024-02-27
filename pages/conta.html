@@ -9,7 +9,9 @@
   <body>
     <header>
       <div class="btn-header">
-        <button class="sacar"><img src="../img/dinheiro.png" /></button>
+        <a href="pre-deposito.html"
+          ><button class="sacar"><img src="../img/dinheiro.png" /></button
+        ></a>
         <button class="btn-menu-right btn-menu" onclick="toggleMenuRight(true)">
           <img src="../img/mobile_menu.png" />
         </button>
@@ -42,53 +44,28 @@
           <p>CONTA</p>
           <div class="hr-saque"></div>
         </div>
-        <p class="info-conta">
-          INFORMAÇÕES DA CONTA
-        </p>
+        <p class="info-conta">INFORMAÇÕES DA CONTA</p>
 
         <div class="container-input-conta">
-          
           <div class="input-conta">
             <div class="input-info-conta">
-              <label for="name-exibicao-conta"
-                >NOME DE EXIBIÇÃO:</label
-              >
-              <input
-                type="text"
-                id="name-exibicao-conta"
-                placeholder="José Silva"
-              />
+              <label for="name-exibicao-conta">NOME DE EXIBIÇÃO:</label>
+              <input type="text" id="name-exibicao-conta" value="José Silva" disabled/>
             </div>
-            <div class=" input-info-conta">
-              <label for="endereco-email-conta">ENDEREÇO DE E-MAIL:
-              </label>
-              <input
-                type="text"
-                id="endereco-email-conta"
-                placeholder="josesilva@gmail.com"
-              />
+            <div class="input-info-conta">
+              <label for="endereco-email-conta">ENDEREÇO DE E-MAIL: </label>
+              <input type="text" id="endereco-email-conta" value="josesilva@gmail.com" disabled/>
             </div>
           </div>
 
           <div class="input-conta">
             <div class="input-info-conta">
-              <label for="phone-conta"
-                >NÚMERO DE TELEFONE:</label
-              >
-              <input
-                type="text"
-                id="phone-conta"
-                placeholder="19 99999-9999"
-              />
+              <label for="phone-conta">NÚMERO DE TELEFONE:</label>
+              <input type="text" id="phone-conta" value="19 99999-9999" disabled/>
             </div>
-            <div class="input-info-conta">
-              <label for="cpf-conta">CPF:
-              </label>
-              <input
-                type="text"
-                id="cpf-conta"
-                placeholder="333.333.333-33"
-              />
+            <div class="input-info-conta" >
+              <label for="cpf-conta">CPF: </label>
+              <input type="text" id="cpf-conta" value="333.333.333-33" disabled />
             </div>
           </div>
         </div>
