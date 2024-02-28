@@ -76,7 +76,7 @@ input[type="checkbox"] + label:before {
   display: inline-block;
   height: 25px;
   width: 25px;
-  background: url(../img/check-off.svg) no-repeat;
+  background: url("../img/check-off.svg") no-repeat;
   background-size: 23px 23px;
 }
 
@@ -85,7 +85,7 @@ input[type="checkbox"]:checked + label:before {
   display: inline-block;
   height: 25px;
   width: 25px;
-  background: url(../img/check-on.svg) no-repeat;
+  background: url("../img/check-on.svg") no-repeat;
   background-size: 23px 23px;
 }
 
@@ -1296,7 +1296,7 @@ td {
 
   body {
     /* background-image: url(/img/bgdesktopnovo.png); */
-    background-image: url(https://raw.githubusercontent.com/wandersonrodriguespro/mega-piano/main/img/bgdesktopnovo.png);
+    background-image: url("https://raw.githubusercontent.com/wandersonrodriguespro/mega-piano/main/img/bgdesktopnovo.png");
     background-size: cover;
     background-position: top;
   }
