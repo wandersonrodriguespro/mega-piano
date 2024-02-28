@@ -45,7 +45,7 @@ button {
 body {
   width: 100%;
   height: calc(100vh - 50px);
-  background-image: url(https://raw.githubusercontent.com/wandersonrodriguespro/mega-piano/main/img/bg-completo.png);
+  background-image: url("https://raw.githubusercontent.com/wandersonrodriguespro/mega-piano/main/img/bg-completo.png");
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
