@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Agradir";
-  src: url("/font/behance-637fcad397009.ttf") format(truetype);
+  src: url("../font/behance-637fcad397009.ttf") format(truetype);
 }
 @font-face {
   font-family: "Agradir-ligt";
-  src: url("/font/Agrandir-WideLight.otf") format(opentype);
+  src: url("../font/Agrandir-WideLight.otf") format(opentype);
 }
 
 * {
@@ -27,10 +27,10 @@ input::-webkit-inner-spin-button {
 }
 
 input:disabled {
-    cursor: default;
-    background-color: #fff;
-    color: black;
-    border-color: transparent;
+  cursor: default;
+  background-color: #fff;
+  color: black;
+  border-color: transparent;
 }
 
 a {
