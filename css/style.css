@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Agradir";
-  src: url("/font/behance-637fcad397009.ttf") format(opentype);
+  src: url("/font/behance-637fcad397009.ttf") format(truetype);
 }
 @font-face {
   font-family: "Agradir-ligt";
-  src: url(/font/Agrandir-WideLight.otf) format(opentype);
+  src: url("/font/Agrandir-WideLight.otf") format(opentype);
 }
 
 * {
