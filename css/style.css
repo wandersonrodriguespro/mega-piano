@@ -126,6 +126,18 @@ input[type="checkbox"]:checked + label:before {
   justify-content: center;
 }
 
+.msg-error {
+  height: 20px;
+  margin: 25px 0 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out ;
+  color: #ef3cb5;
+}
+
+.msg-error p {
+  font-size: 1rem;
+}
+
 .user-logado {
   background-color: transparent;
   display: flex;
@@ -1242,6 +1254,8 @@ td {
 
 .container-main-login a {
   margin: auto;
+  text-decoration: underline;
+  color: #ef3cb5;
 }
 
 .container-content-sacar,

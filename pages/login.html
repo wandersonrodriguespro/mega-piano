@@ -32,30 +32,31 @@
             <li><a href="indique.html">Indique um amigo</a></li>
             <li><a href="#">Suporte</a></li>
             <li><a href="conta.html">Conta</a></li>
+            <li onclick="sair()"><a style="cursor: pointer;">Sair</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-
     <div class="container-content">
       <div class="container-main container-main-login">
-        <div class="container-img"><img src="../img/loguin.png"/></div>
+        <div class="container-img"><img src="../img/loguin.png" /></div>
 
         <div class="title">
           <p>FAÇA SEU LOGIN!</p>
           <div class="hr-login"></div>
+          <div class="msg-error"><p>E-Mail ou senha incorretos</p></div>
         </div>
 
         <div class="inputs-cadastro">
           <div class="email">
             <div class="input-email">
-              <label for="email">E-Mail:</label>
+              <label for="email" id="label-email">E-Mail:</label>
               <input type="email" id="email" placeholder="Digite seu e-mail" />
             </div>
-            
+
             <div class="senha">
-              <label for="senha">Digite sua senha:</label>
+              <label for="senha" id="label-senha">Digite sua senha:</label>
               <input class="campo-senha" type="password" id="senha" placeholder="Digite sua senha" />
 
               <div class="checkbox">
@@ -63,20 +64,19 @@
                 <label for="mostrar-senha">MOSTRAR SENHA</label>
               </div>
             </div>
-
           </div>
         </div>
 
         <span class="esqueceu-senha-login">ESQUECEU A SUA SENHA ? <a href="reset-senha.html">CLIQUE AQUI!</a></span>
 
-        <a href="pre-jogo.html"><button class="btn-pg-login">LOGAR</button></a>
+        <button class="btn-pg-login" id="logar">LOGAR</button>
         <div class="concentimento">
           <div class="checkbox termos">
-            <input type="checkbox" name="termos" id="termos" /> 
+            <input type="checkbox" name="termos" id="termos" />
             <label for="termos">Ao registrar você concorda com os termos de serviço.</label>
           </div>
           <div class="checkbox idade-minima">
-            <input type="checkbox" name="idade-minima" id="idade-minima" /> 
+            <input type="checkbox" name="idade-minima" id="idade-minima" />
             <label for="idade-minima">AO SE CADASTRAR NESSE SITE, DECLARO SER +18 ANOS DE IDADE.</label>
           </div>
         </div>
@@ -84,4 +84,5 @@
     </div>
   </body>
   <script src="../js/scripts.js"></script>
+  <script src="../js/login.js"></script>
 </html>

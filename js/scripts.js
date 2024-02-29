@@ -36,7 +36,18 @@ btnMostarRepetirSenha.addEventListener("change", () => {
   campoRepetirSenha.setAttribute("type", estadoAtualDoCampoRepetirSenha);
 });
 
+// logout
 
-const input = document.querySelectorAll(".input-info-conta");
+// const btnLogout = document.querySelector("#logout");
 
-input.disabled = true;
+// btnLogout.addEventListener ("click", ()=> {
+//   localStorage.removeItem("token")
+//   localStorage.removeItem("userLogado")
+//   window.location.href = "../login.html";
+// })
+
+function sair() {
+  localStorage.removeItem("token");
+  localStorage.removeItem("userLogado");
+  window.location.href = "./login.html";
+}

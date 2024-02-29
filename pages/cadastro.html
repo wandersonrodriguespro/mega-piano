@@ -14,9 +14,7 @@
         </button>
         <div class="g-login">
           <p>JÁ POSSUI CONTA:</p>
-          <a href="login.html"
-            ><button class="btn-header-login">CLIQUE AQUI</button></a
-          >
+          <a href="login.html"><button class="btn-header-login">CLIQUE AQUI</button></a>
         </div>
       </div>
 
@@ -34,6 +32,7 @@
             <li><a href="indique.html">Indique um amigo</a></li>
             <li><a href="#">Suporte</a></li>
             <li><a href="conta.html">Conta</a></li>
+            <li onclick="sair()"><a style="cursor: pointer;">Sair</a></li>
           </ul>
         </div>
       </nav>
@@ -50,33 +49,35 @@
           <div class="hr-cadastro"></div>
         </div>
 
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
         <div class="inputs-cadastro">
           <div class="email-telefone">
             <div class="input-email">
-              <label for="email">E-Mail:</label>
-              <input type="email" id="email" placeholder="Digite seu e-mail" />
+              <label for="email" id="label-email">E-Mail:</label>
+              <input type="email" id="email" placeholder="Digite seu e-mail" required/>
             </div>
             <div class="input-tel">
-              <label for="phone">Telefone:</label>
-              <input type="tel" id="phone" placeholder="Digite seu telefone" />
+              <label for="phone" id="label-phone">Telefone:</label>
+              <input type="tel" id="phone" placeholder="Digite seu telefone" required/>
             </div>
           </div>
           <div class="senha-repetsenha">
             <div class="senha">
-              <label for="senha">Digite sua senha:</label>
-              <input class="campo-senha" type="password" id="senha" placeholder="Digite sua senha"/>
-              
+              <label for="senha" id="label-senha">Digite sua senha:</label>
+              <input class="campo-senha" type="password" id="senha" placeholder="Digite sua senha" />
+
               <div class="checkbox">
                 <input class="btn-mostrar-senha" type="checkbox" name="mostrar-senha" id="mostrar-senha" />
                 <label class="label-senha" for="mostrar-senha">MOSTRAR SENHA</label>
               </div>
-
             </div>
 
             <div class="repet-senha">
-              <label for="repetsenha">Digite sua senha:</label>
+              <label for="repetsenha" id="label-repetsenha">Repetir senha:</label>
               <input class="campo-repetir-senha" type="password" id="repetsenha" placeholder="Digite sua senha" />
-              
+
               <div class="checkbox">
                 <input class="btn-mostrar-repetir-senha" type="checkbox" name="repet-senha" id="repet-senha" />
                 <label for="repet-senha">MOSTRAR SENHA</label>
@@ -84,23 +85,22 @@
             </div>
           </div>
         </div>
-        <a href="pre-jogo.html"><button class="btn-pg-cadastro">Cadastrar</button></a>
+
+        <button class="btn-pg-cadastro">Cadastrar</button>
+
         <div class="concentimento">
           <div class="checkbox termos">
             <input type="checkbox" name="termos" id="termos" />
-            <label for="termos"
-              >Ao registrar você concorda com os termos de serviço.</label
-            >
+            <label for="termos">Ao registrar você concorda com os termos de serviço.</label>
           </div>
           <div class="checkbox idade-minima">
             <input type="checkbox" name="idade-minima" id="idade-minima" />
-            <label for="idade-minima"
-              >AO SE CADASTRAR NESSE SITE, DECLARO SER +18 ANOS DE IDADE.</label
-            >
+            <label for="idade-minima">AO SE CADASTRAR NESSE SITE, DECLARO SER +18 ANOS DE IDADE.</label>
           </div>
         </div>
       </div>
     </div>
   </body>
   <script src="../js/scripts.js"></script>
+  <script src="../js/cadastro.js"></script>
 </html>

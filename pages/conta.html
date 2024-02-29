@@ -31,6 +31,7 @@
             <li><a href="indique.html">Indique um amigo</a></li>
             <li><a href="#">Suporte</a></li>
             <li><a href="conta.html">Conta</a></li>
+            <li onclick="sair()"><a style="cursor: pointer;">Sair</a></li>
           </ul>
         </div>
       </nav>
@@ -50,18 +51,18 @@
           <div class="input-conta">
             <div class="input-info-conta">
               <label for="name-exibicao-conta">NOME DE EXIBIÇÃO:</label>
-              <input type="text" id="name-exibicao-conta" value="José Silva" disabled/>
+              <input type="text" id="name-exibicao-conta" disabled/>
             </div>
             <div class="input-info-conta">
               <label for="endereco-email-conta">ENDEREÇO DE E-MAIL: </label>
-              <input type="text" id="endereco-email-conta" value="josesilva@gmail.com" disabled/>
+              <input type="text" id="endereco-email-conta" disabled/>
             </div>
           </div>
 
           <div class="input-conta">
             <div class="input-info-conta">
               <label for="phone-conta">NÚMERO DE TELEFONE:</label>
-              <input type="text" id="phone-conta" value="19 99999-9999" disabled/>
+              <input type="text" id="phone-conta" disabled/>
             </div>
             <div class="input-info-conta" >
               <label for="cpf-conta">CPF: </label>
@@ -73,4 +74,6 @@
     </div>
   </body>
   <script src="../js/scripts.js"></script>
+  <script src="../js/verificacaologin.js"></script>
+  <script src="../js/conta.js"></script>
 </html>
