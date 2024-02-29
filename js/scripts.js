@@ -36,16 +36,6 @@ btnMostarRepetirSenha.addEventListener("change", () => {
   campoRepetirSenha.setAttribute("type", estadoAtualDoCampoRepetirSenha);
 });
 
-// logout
-
-// const btnLogout = document.querySelector("#logout");
-
-// btnLogout.addEventListener ("click", ()=> {
-//   localStorage.removeItem("token")
-//   localStorage.removeItem("userLogado")
-//   window.location.href = "../login.html";
-// })
-
 function sair() {
   localStorage.removeItem("token");
   localStorage.removeItem("userLogado");
