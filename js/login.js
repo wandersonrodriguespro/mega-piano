@@ -2,7 +2,6 @@
 const btnLogar = document.querySelector("#logar");
 
 btnLogar.addEventListener("click", () => {
-  console.log("logar");
   entrar();
 });
 
@@ -22,7 +21,7 @@ function entrar() {
 
     listaUser = JSON.parse(localStorage.getItem("listaUser"))
 
-    listaUser.forEach(item => {
+    listaUser?.forEach(item => {
         if (email.value === item.emailCad && senha.value === item.senhaCad) {
           userValid = {
             email: item.emailCad,
