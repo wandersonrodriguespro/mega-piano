@@ -1,7 +1,5 @@
 const containerNotificationLeft = document.querySelector(".container-notify-left");
-
 const containerNotificationRight = document.querySelector(".container-notify-rigth");
-
 const containerNotificacao = document.querySelector(".container-notificacao");
 
 const arrayName = [
